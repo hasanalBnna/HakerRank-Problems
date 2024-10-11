@@ -9,7 +9,6 @@ public class Java_Int_to_String {
 
    
 
-public class Solution {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         
@@ -27,4 +26,4 @@ public class Solution {
 }
 
     
-}
+
