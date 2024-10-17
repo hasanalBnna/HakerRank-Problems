@@ -22,6 +22,8 @@ public class Java_String_Reverse {
         } else {
             System.out.println("No");
         }
+        
+        sc.close();
     }
     
 }
