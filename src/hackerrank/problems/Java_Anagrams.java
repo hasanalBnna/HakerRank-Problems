@@ -11,11 +11,13 @@ import java.util.Scanner;
 public class Java_Anagrams {
 
     static boolean isAnagram(String a, String b){
+        a = a.toLowerCase();
+        b = b.toLowerCase();
+        
         char[] c1 = a.toCharArray();
         char[] c2 = b.toCharArray();
         
         if(c1.length != c2.length){
-//            System.out.println("Not Anagrams");
                 return false;
         }
         
@@ -23,19 +25,12 @@ public class Java_Anagrams {
         Arrays.sort(c2);
         
         for(int i = 0; i<c1.length; i++){
-            if(c1[i] != c2[i]){
-//              System.out.println("Not Anagrams");  
+            if(c1[i] != c2[i]){  
                 return false;
             }
         }
-//        System.out.println("Anagrams");
         return true;
-//        a= a.toLowerCase();
-//        b=b.toLowerCase();
-//        
-//        if(a.length() != b.length()){
-//            return false;
-//        }
+
             
 
     }
