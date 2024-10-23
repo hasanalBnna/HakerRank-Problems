@@ -1,5 +1,5 @@
 
-package hackerrank;
+package hackerrank.problems;
 import java.util.Scanner;
 /**
  *
