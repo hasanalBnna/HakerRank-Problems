@@ -12,17 +12,17 @@ public class Java_Regex_2_Duplicate_Words {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         
-        // Pattern to match consecutive duplicate words
-        String regex = "\\b(\\w+)\\b\\s+\\1\\b";
-        Pattern p = Pattern.compile(regex, Pattern.CASE_INSENSITIVE); // Ignore case
         
-        // Number of lines to process
+        String regex = "\\b(\\w+)\\b\\s+\\1\\b";
+        Pattern p = Pattern.compile(regex, Pattern.CASE_INSENSITIVE); 
+        
+        
         int numSentences = Integer.parseInt(in.nextLine());
         
         while (numSentences-- > 0) {
             String input = in.nextLine();
             
-            // Create a Matcher object
+            
             Matcher m = p.matcher(input);
             
             // Replace all consecutive duplicates
@@ -34,7 +34,7 @@ public class Java_Regex_2_Duplicate_Words {
                 m = p.matcher(input); 
             }
             
-            // Print the result after replacement
+            
             System.out.println(input);
         }
         
